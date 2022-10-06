@@ -1,4 +1,4 @@
-import projects from '../../data/work.json'
+import projects from '@//data/work.json'
 
 export default defineEventHandler(event => {
   const {q = ''} = useQuery(event)
