@@ -7,24 +7,24 @@
       <div class="mb-4">
         <label class="block mb-2 text-sm font-bold text-gray-300" for="name">Name:</label>
         <input
-          class="w-full px-3 py-2 leading-tight text-gray-300 bg-gray-600 rounded appearance-none focus:bg-gray-500 focus:border-1 focus:border-gray-600 focus:outline-none "
+          class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 rounded-lg border-4 border-indigo-500 appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
           name="name" type="text" id="name" v-model="formValues.name" />
       </div>
       <div class="mb-4">
         <label class="block mb-2 text-sm font-bold text-gray-300" for="email">Email:</label>
         <input
-          class="w-full px-3 py-2 leading-tight text-gray-300 bg-gray-600 rounded appearance-none focus:bg-gray-500 focus:border-1 focus:border-gray-600 focus:outline-none "
+          class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 rounded-lg border-4 border-indigo-500 appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
           name="email" type="email" id="email" v-model="formValues.email" />
       </div>
       <div class="mb-4">
         <label class="block mb-2 text-sm font-bold text-gray-300" for="message">Message</label>
         <textarea
-          class="w-full px-3 py-2 leading-tight text-gray-300 bg-gray-600 rounded appearance-none focus:bg-gray-500 focus:border-1 focus:border-gray-600 focus:outline-none "
+          class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 rounded-lg border-4 border-indigo-500 appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
           type="textarea" name="message" id="message" rows="6" v-model="formValues.message"></textarea>
       </div>
       <div class="button relative">
         <input type="submit" :value="sent? 'sent!' : 'send'" :disabled="sent" :class="sent? sentClass : ''"
-          class="btn cursor-pointer py-3 w-full hover:bg-indigo-600 transition-all bg-indigo-500 rounded-lg" />
+          class="btn cursor-pointer py-3 w-full hover:bg-cyan-500 transition-all bg-indigo-500 rounded-lg" />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-6 h-6 absolute left-0 top-3 transition-all duration-700" :class="animate">
           <path stroke-linecap="round" stroke-linejoin="round"
