@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Nuxt Shopping",
+    "description": "A very simple e-commerce site, created in Nuxt 3 with Pinia for state management and Tailwind for CSS",
+    "projectLink": "https://github.com/cherbear263/nuxt3-shopping",
+    "keywords": [
+      "Nuxt3",
+      "Vue",
+      "Javascript",
+      "Tailwind",
+      "Pinia"
+    ],
+    "features": [
+      "simple e-commerce application in Nuxt3",
+      "Pinia for state management",
+      "still in development"
+    ],
+    "heading": "Nuxt3 ecommerce",
+    "imageData": {
+      "name": "Nuxt 3 Shopping App Photo",
+      "alt": "Image of a sample e-commece site, with the cart showing in a sidebar",
+      "url": "https://github.com/cherbear263/nuxt3-shopping/raw/main/assets/images/screenshot.png"
+    }
+  },
+  {
+    "title": "RentDee - for Landlords - in both Thai and English",
+    "description": "An app created for landlords in Thailand to report bad tenants. They can also search the database when evaluating tenant applications. I used the Vue-i18n plugin to translate the site from English to Thai",
+    "projectLink": "https://dee-rent.web.app/",
+    "keywords": [
+      "Vue",
+      "Firebase",
+      "Javascript",
+      "Tailwind",
+      "internationalization",
+      "vue-i18n"
+    ],
+    "features": [
+      "English/Thai translation using vue-i18n",
+      "Firebase integration",
+      "Landlords can report a bad tenant or search an applicant",
+      "Third-party auth (Google and Facebook)"
+    ],
+    "heading": "Internationalisation (i18n)",
+    "imageData": {
+      "name": "RentDee",
+      "alt": "Image of RentDee Dashboard with a modal showing a green tick",
+      "url": "https://github.com/cherbear263/vue-portfolio/blob/main/src/assets/rentDee-dashboard.png?raw=true"
+    }
+  },
+  {
+    "title": "RealSocial",
+    "description": "A business website for a social media manager and web developer",
+    "projectLink": "https://real.social",
+    "keywords": [
+      "wagtail",
+      "django",
+      "python",
+      "CMS"
+    ],
+    "features": [
+      "custom CMS",
+      "made with Wagtail, in Python (Django Framework)"
+    ],
+    "heading": "Custom CMS in Python",
+    "imageData": {
+      "name": "RealSocial",
+      "alt": "Image of RentDee Dashboard with a modal showing a green tick",
+      "url": "~/assets/img/realsocial.png"
+    }
+  },
+  {
+    "title": "Crafing with Cazz",
+    "description": "A blog made in Wordpress for a dear friend who is a prolific crafting blogger and card-maker. This was customised to make posting a simple process. She wanted a lot of photos in her blog posts and links back to her existing store.",
+    "projectLink": "https: //craftingwithcazz.com/",
+    "keywords": [
+      "Wordpress",
+      "CMS",
+      "blog"
+    ],
+    "features": [
+      "Blog made in Wordpress for a friend who is an avid crafter and Stampin'up demonstrator"
+    ],
+    "heading": "Wordpress Blog",
+    "imageData": {
+      "name": "Crafting with Cazz",
+      "alt": "Image of a crafting website home page called Crafing with Cazz",
+      "url": "https://github.com/cherbear263/vue-portfolio/blob/main/src/assets/cazz.png?raw=true"
+    }
+  },
+  {
+    "title": "Flask CoffeeShop",
+    "description": "A coffee-ordering app, custom-designed in flask, for teachers to order a coffee with delivery from the Year 10 hospitality class. Authentication, ordering, keeping track of payments, order history, custom printed order labels, and more...",
+    "projectLink": "http://cheryl.pythonanywhere.com",
+    "keywords": [
+      "python",
+      "Flask",
+      "chart.js"
+    ],
+    "features": [
+      "custom application built for Year 10 Hospitality students",
+      "made in Python with Flask micro-framework",
+      "includes a customer-facing ordering solution and full admin backend",
+      "chart.js was used to graph statistics",
+      "integrated gmail to send order confirmation and reset password token",
+      "this is being used currently and hosted privately, but I have hosted a copy on pythonanywhere so that you can test it! Click on 'register' to create a new account"
+    ],
+    "heading": "Python-Flask Coffee",
+    "imageData": {
+      "name": "Year 10 Coffeeshop app",
+      "alt": "Image of the dashboard for the coffee-ordering application. Includes statistics in a colourful pie chart",
+      "url": "https://github.com/cherbear263/vue-portfolio/blob/main/src/assets/SLAS_dashboard.png?raw=true"
+    }
+  },
+  {
+    "title": "Portfolio Site",
+    "description": "I'm sure there is some kind of rule about not putting your own portfolio in your work samples, but why not?",
+    "projectLink": "https://cheryljones.com.au",
+    "keywords": [
+      "javascript",
+      "vue",
+      "Nuxt3",
+      "Tailwind"
+    ],
+    "features": [
+      "portfolio site made in Nuxt 3",
+      "dynamic data from JSON",
+      "in future the data will be generated from Strapi CMS",
+      "for fun the colours of the work samples are generated randomly",
+      "enjoying using CI/CD pipeline with Netlify"
+    ],
+    "heading": "Nuxt3 Portfolio",
+    "imageData": {
+      "name": "",
+      "alt": "",
+      "url": ""
+    }
+  }
+]
