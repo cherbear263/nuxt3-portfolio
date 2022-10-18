@@ -23,11 +23,11 @@ const color = (colors) => {
 </script>
 <template>
   <section id="work">
-    <h1 class="text-white text-5xl mb-10">Some of my work</h1>
-    <div class="bg-red-200 rounded p-4 mt-3 text-red-500 font-semibold" v-if="error">
+    <h1 class="mb-20 text-5xl text-white">Some of my work</h1>
+    <div class="p-4 mt-3 font-semibold text-red-500 bg-red-200 rounded" v-if="error">
       <div class="relative flex-row">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-6 h-6 absolute top-0 left-0">
+          class="absolute top-0 left-0 w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
 
@@ -36,7 +36,7 @@ const color = (colors) => {
         <p>{{error.message}}</p>
       </div>
     </div>
-    <div class="bg-gray-200 rounded p-4 mt-3 text-gray-500 font-semibold" v-if="pending">
+    <div class="p-4 mt-3 font-semibold text-gray-500 bg-gray-200 rounded" v-if="pending">
       <div class="relative inline">
         <div class="lds-roller">
           <div></div>
@@ -48,34 +48,36 @@ const color = (colors) => {
           <div></div>
           <div></div>
         </div>
-        <p class="ml-8 w-10 inline">Loading...</p>
+        <p class="inline w-10 ml-8">Loading...</p>
       </div>
 
 
     </div>
-    <div class="mt-5 bg-gray-800 border-4 border-indigo-500 rounded-lg p-4 flex lg:flex-row flex-col gap-2 mb-10">
+    <div class="flex flex-col gap-2 p-4 mt-5 mb-20 bg-gray-800 border-2 border-indigo-500 rounded-lg lg:flex-row">
       <div>
-        <h3 class="text-xl text-cyan-400 font-semibold">Portfolio Search</h3>
+        <h3 class="text-xl font-semibold text-cyan-400">Portfolio Search</h3>
         <h3 class="text-lg text-white text-semibold">For example, you could try keywords like: like <span
             class="text-indigo-500 cursor-pointer" @click="query='tailwind'">Tailwind</span> or <span
             class="text-indigo-500 cursor-pointer" @click="query='python'">Python</span> or <span
             class="text-indigo-500 cursor-pointer" @click="query='nuxt'">Nuxt</span></h3>
       </div>
-      <form class="w-full lg:w-1/2 mt-3">
+      <form class="w-full mt-5 lg:w-1/2">
         <div class="relative font-normal text-gray-700">
           <input type="text" id="search" placeholder="Search" v-model="query"
-            class="form-control block w-full rounded-lg  border-indigo-500 px-4 py-2 bg-gray-200 bg-clip-padding border-4 border-solid" />
+            class="block w-full px-4 py-2 bg-gray-200 border-2 border-indigo-500 border-solid rounded-lg form-control bg-clip-padding" />
         </div>
       </form>
 
     </div>
 
-    <div class=" mt-5">
-      <div class="grid grid-cols-1 lg:grid-cols-2  gap-3 lg:gap-5">
+    <div class="mt-5 ">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
         <div v-for="project in projects" :key="project.title" :class="color(colors)"
-          class="p-14  rounded-md flex flex-col items-center justify-center hover:scale-105 transition-all cursor-pointer">
-          <h3 class="text-white font-bold text-2xl md:text-lg lg:text-3xl text-center">{{project.heading}}</h3>
-          <ul class="list-disc mt-3 text-gray-800">
+          class="flex flex-col items-center justify-center transition-all rounded-md p-14 hover:scale-105">
+          <a :href="project.projectLink">
+            <h3 class="text-2xl font-bold text-center text-white md:text-lg lg:text-3xl">{{project.heading}}</h3>
+          </a>
+          <ul class="mt-3 text-gray-800 list-disc">
             <li v-for="feature in project.features" :key="feature" class="">{{feature}}</li>
           </ul>
 
