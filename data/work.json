@@ -71,7 +71,7 @@
   {
     "title": "Crafing with Cazz",
     "description": "A blog made in Wordpress for a dear friend who is a prolific crafting blogger and card-maker. This was customised to make posting a simple process. She wanted a lot of photos in her blog posts and links back to her existing store.",
-    "projectLink": "https: //craftingwithcazz.com/",
+    "projectLink": "https://craftingwithcazz.com/",
     "keywords": [
       "Wordpress",
       "CMS",
@@ -102,6 +102,7 @@
       "includes a customer-facing ordering solution and full admin backend",
       "chart.js was used to graph statistics",
       "integrated gmail to send order confirmation and reset password token",
+      "Room for improvement: I became interested in Vue because I hated how the server had to refresh every time an item was added",
       "this is being used currently and hosted privately, but I have hosted a copy on pythonanywhere so that you can test it! Click on 'register' to create a new account"
     ],
     "heading": "Python-Flask Coffee",

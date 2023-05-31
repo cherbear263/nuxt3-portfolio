@@ -2,7 +2,7 @@
 import { refDebounced } from '@vueuse/core'
 const query = ref('')
 refDebounced(query, 1000)
-const { data, pending, error } = useFetch(() => `/api/projects?q=${query.value}`)
+const { data, pending, error } = await useFetch(() => `/api/projects?q=${query.value}`)
 
 const projects = data;
 const colors = [
@@ -33,7 +33,7 @@ const color = (colors) => {
 
         </svg>
         <p class="ml-8">Oops! There is an error</p>
-        <p>{{error.message}}</p>
+        <p>{{ error.message }}</p>
       </div>
     </div>
     <div class="p-4 mt-3 font-semibold text-gray-500 bg-gray-200 rounded" v-if="pending">
@@ -53,6 +53,7 @@ const color = (colors) => {
 
 
     </div>
+    <!--
     <div class="flex flex-col gap-2 p-4 mt-5 mb-20 bg-gray-800 border-2 border-indigo-500 rounded-lg lg:flex-row">
       <div>
         <h3 class="text-xl font-semibold text-cyan-400">Portfolio Search</h3>
@@ -69,16 +70,16 @@ const color = (colors) => {
       </form>
 
     </div>
-
+-->
     <div class="mt-5 ">
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
         <div v-for="project in projects" :key="project.title" :class="color(colors)"
           class="flex flex-col items-center justify-center transition-all rounded-md p-14 hover:scale-105">
           <a :href="project.projectLink">
-            <h3 class="text-2xl font-bold text-center text-white md:text-lg lg:text-3xl">{{project.heading}}</h3>
+            <h3 class="text-2xl font-bold text-center text-white md:text-lg lg:text-3xl">{{ project.heading }}</h3>
           </a>
           <ul class="mt-3 text-gray-800 list-disc">
-            <li v-for="feature in project.features" :key="feature" class="">{{feature}}</li>
+            <li v-for="feature in project.features" :key="feature" class="">{{ feature }}</li>
           </ul>
 
         </div>
@@ -88,7 +89,6 @@ const color = (colors) => {
     </div>
     <button-contact section='contact' />
   </section>
-
 </template>
 <style scoped>
 .lds-roller {
