@@ -3,8 +3,8 @@
     <h1 class="mb-3 text-5xl text-white">Contact me</h1>
     <p class="text-lg text-gray-300">Hey, I would love to hear from you! Drop me a message below and I'll get back soon.
     </p>
-    <form class="w-full max-w-md mt-10" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
-      @submit.prevent="sendMail" autocomplete="off">
+    <form name="form-name" value="website contact form" class="w-full max-w-md mt-10" method="post" data-netlify="true"
+      data-netlify-honeypot="bot-field" autocomplete="off">
       <div class="mb-4">
         <label class="block mb-2 text-sm font-bold text-gray-300" for="name">Name:</label>
         <input
@@ -24,7 +24,8 @@
           type="textarea" name="message" id="message" rows="6" v-model="formValues.message"></textarea>
       </div>
       <div class="relative button">
-        <input type="submit" :value="sent ? 'sent!' : 'send'" :disabled="sent" :class="sent ? sentClass : ''"
+        <input @click.prevent="sendMail" type="submit" :value="sent ? 'sent!' : 'send'" :disabled="sent"
+          :class="sent ? sentClass : ''"
           class="w-full py-3 text-gray-300 uppercase transition-all bg-indigo-500 rounded-lg cursor-pointer btn hover:bg-cyan-500" />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="absolute left-0 w-6 h-6 transition-all duration-700 top-3" :class="animate">
