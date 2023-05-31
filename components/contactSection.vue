@@ -12,20 +12,19 @@
           name="name" type="text" id="name" v-model="formValues.name" />
       </div>
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-300" for="email">Email:</label>
+        <label class="block mb-2 text-sm font-bold text-gray-300" for="email">some value:</label>
         <input
           class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 border-2 border-indigo-500 rounded-lg appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
           name="email" type="email" id="email" v-model="formValues.email" />
       </div>
       <div class="mb-4">
-        <label class="block mb-2 text-sm font-bold text-gray-300" for="message">Message</label>
+        <label class="block mb-2 text-sm font-bold text-gray-300" for="message">Message:</label>
         <textarea
           class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 border-2 border-indigo-500 rounded-lg appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
           type="textarea" name="message" id="message" rows="6" v-model="formValues.message"></textarea>
       </div>
       <div class="relative button">
-        <input @click.prevent="sendMail" type="submit" :value="sent ? 'sent!' : 'send'" :disabled="sent"
-          :class="sent ? sentClass : ''"
+        <input type="submit" :value="sent ? 'sent!' : 'send'" :disabled="sent" :class="sent ? sentClass : ''"
           class="w-full py-3 text-gray-300 uppercase transition-all bg-indigo-500 rounded-lg cursor-pointer btn hover:bg-cyan-500" />
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="absolute left-0 w-6 h-6 transition-all duration-700 top-3" :class="animate">
