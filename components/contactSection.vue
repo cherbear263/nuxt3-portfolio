@@ -3,8 +3,11 @@
     <h1 class="mb-3 text-5xl text-white">Contact me</h1>
     <p class="text-lg text-gray-300">Hey, I would love to hear from you! Drop me a message below and I'll get back soon.
     </p>
-    <form name="form-name" value="website contact form" class="w-full max-w-md mt-10" method="post" data-netlify="true"
-      autocomplete="off" action="/">
+    <form name="contact" netlify-honeypot="bot-field" value="website contact form" class="w-full max-w-md mt-10"
+      method="post" data-netlify="true" autocomplete="off" action="/">
+      <p class="hidden">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
       <div class="mb-4">
         <input
           class="w-full px-3 py-2 leading-tight text-indigo-500 bg-gray-800 border-2 border-indigo-500 rounded-lg appearance-none focus:border-3 focus:border-cyan-500 focus:outline-none focus:bg-cyan-100 focus:text-indigo-800 focus:font-semibold"
